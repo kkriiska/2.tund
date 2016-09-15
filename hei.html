@@ -1,0 +1,61 @@
+<?php
+
+    //var_dump($_GET):
+	//echo "<br>";
+	//var_dump($_POST);
+	
+	//kas on üldse olemas
+	if (isset ($_POST[@singupEmail@])){
+	
+	   //oli olemas, ehk keegi vajutas nuppu
+	   if (empty ($_POST["singupEmail]")) {
+	     
+		  //oli toesti tuhi
+		  echo "email oli tuhi";
+		}  
+	}
+?>	
+
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Sisselogimise lehy</title>
+    </head>
+    <body>
+
+          <h1>Logi sisse</h1>
+		  
+		  <form method="POST">
+		  
+		      <lable>E-post</lable><br>
+		      <input name="loginEmail" type="email">
+			  
+			  <br><br>
+			  
+			  <input placeholder="parool" name="loginPassword" type="password">
+		       
+			  <br><br>
+			  
+			  <input type="submit">
+			  
+		  </form>
+          <h1>Loo kasutaja</h1>
+		  
+		  <form method="POST">
+		  
+		  
+		      <lable>E-post</lable><br>
+		      <input name="singupEmail" type="email">
+			  
+			  <br><br>
+			  
+			  <input placeholder="parool" name="singupPassword" type="password">
+		       
+			  <br><br>
+			  
+			  <input type="submit" value= "Loo kasutaja">
+			  
+		  </form>
+
+    </body>
+</html>
